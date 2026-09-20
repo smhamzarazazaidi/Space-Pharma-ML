@@ -1,0 +1,12 @@
+variable,column,spearman_rho,p_value,ci_95_lo,ci_95_hi,significant_p05
+Days in Space,days_in_space,-0.1528,0.40387,-0.4761,0.207,False
+HBA,hbond_acceptors,-0.1275,0.48667,-0.456,0.2315,False
+Cumul. Dose (Gy),cumulative_dose_Gy,-0.1098,0.54985,-0.4416,0.2485,False
+Is Solid,is_solid,-0.0677,0.71264,-0.4068,0.2878,False
+Complexity,molecular_complexity,-0.007,0.96974,-0.3548,0.3426,False
+XLogP,xlogp,0.0107,0.95361,-0.3393,0.3581,False
+TPSA (A2),tpsa_angstrom2,0.025,0.89175,-0.3265,0.3705,False
+MW (g/mol),molecular_weight_gmol,0.045,0.8069,-0.3086,0.3876,False
+Rot. Bonds,rotatable_bonds,0.0752,0.6826,-0.2809,0.413,False
+HBD,hbond_donors,0.1011,0.5821,-0.2567,0.4344,False
+Flight API,flight_percent_api_remaining,0.1984,0.27635,-0.1615,0.5117,False

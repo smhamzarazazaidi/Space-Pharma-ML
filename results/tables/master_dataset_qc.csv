@@ -1,0 +1,10 @@
+metric,value,status
+total_ds01_rows,32,PASS
+total_matched_radiation_lots,32,PASS
+total_matched_drug_property_compounds,8,PASS
+unmatched_drugs,0,PASS
+duplicate_master_observations,0,PASS
+impossible_negative_radiation_values,0,PASS
+min_radiation_dose_mGy,104.74,PASS
+max_radiation_dose_mGy,698.933,PASS
+outcome_assay_status,Extracted from Characteristics Table; Quantitative API % pending full assay table extraction,DOCUMENTED

@@ -1,0 +1,11 @@
+{
+  "url": "https://visualization.osdr.nasa.gov/eda/api/missions/",
+  "resolved_url": "https://visualization.osdr.nasa.gov/eda/api/missions/",
+  "status": 200,
+  "content_type": "application/json",
+  "retrieved_utc": "2026-09-19T18:58:05.133604+00:00",
+  "bytes": 26206,
+  "sha256": "6163e2bda0272cb1a242eec698b383440898b19d8ac2e73942a2278fafc904de",
+  "path": "data\\raw\\environment\\metadata\\eda_missions.json",
+  "license": "Publicly accessible; dataset-specific reuse terms require review"
+}

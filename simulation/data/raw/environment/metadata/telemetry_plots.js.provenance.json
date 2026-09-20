@@ -1,0 +1,11 @@
+{
+  "url": "https://visualization.osdr.nasa.gov/eda/static/js/telemetry_plots.js",
+  "resolved_url": "https://visualization.osdr.nasa.gov/eda/static/js/telemetry_plots.js",
+  "status": 200,
+  "content_type": "text/javascript",
+  "retrieved_utc": "2026-09-19T19:02:19.648445+00:00",
+  "bytes": 10418,
+  "sha256": "a5985a3a1e066c6de9a802d24693bfb660234fee43038f42571a210b3d1e9c86",
+  "path": "data\\raw\\environment\\metadata\\telemetry_plots.js",
+  "license": "Publicly accessible; dataset-specific reuse terms require review"
+}

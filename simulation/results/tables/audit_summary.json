@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-09-19T19:13:05.543132+00:00",
+  "lots": 32,
+  "apis": 8,
+  "missions": 6,
+  "outcome_mapping_disagreements": 29,
+  "figure_mapping_conflicts": 16,
+  "legacy_positional_assignment_reproduced": true,
+  "relative_delta_arithmetic_failures": 0,
+  "radiation_rows": 2336764,
+  "radiation_missing_cells": 0,
+  "radiation_duplicate_sensor_timestamps": 3481,
+  "radiation_exact_duplicate_rows": 0,
+  "radiation_conflicting_timestamp_groups": 3481,
+  "radiation_negative_values": 0,
+  "radiation_first_timestamp": "2018-06-01 00:00:28+00:00",
+  "radiation_last_timestamp": "2022-11-01 23:56:35+00:00",
+  "radiation_sha256": "89567a16c4f46303e5d7f994a7e12b0b50eab8dfe3ce5d2de19e9ce0a6200d00",
+  "master_sha256": "b480e06984e12f4ca901800356e9f7523a4709d4a34aa81d03e71895f400bfae",
+  "all_exact_iss_windows_unresolved": true,
+  "models_run": false,
+  "parent_files_changed": []
+}

@@ -1,0 +1,17 @@
+sample_id,drug_name,formulation,source_identifier,expected_panel
+DS01_06,Naloxone,Solution,Nowadly 2026 Figure 2A,3F
+DS01_07,Promethazine,Solution,Nowadly 2026 Figure 3F,3G
+DS01_09,Caffeine,Tablet,Nowadly 2026 Figure 3G,2A
+DS01_11,Epinephrine,Autoinjector,Nowadly 2026 Figure 3B,3C
+DS01_12,Diphenhydramine,Solution,Nowadly 2026 Figure 3E,3B
+DS01_13,Lidocaine,Solution,Nowadly 2026 Figure 3G,3E
+DS01_14,Promethazine,Solution,Nowadly 2026 Figure 3C,3G
+DS01_15,Caffeine,Tablet,Nowadly 2026 Figure 2C,2A
+DS01_16,Diazepam,Solution,Nowadly 2026 Figure 2A,3A
+DS01_17,Diphenhydramine,Capsule,Nowadly 2026 Figure 3A,2B
+DS01_18,Diphenhydramine,Solution,Nowadly 2026 Figure 2B,3B
+DS01_19,Ketamine,Solution,Nowadly 2026 Figure 3B,3D
+DS01_20,Lidocaine,Solution,Nowadly 2026 Figure 3D,3E
+DS01_21,Naloxone,Solution,Nowadly 2026 Figure 3E,3F
+DS01_22,Promethazine,Solution,Nowadly 2026 Figure 3F,3G
+DS01_23,Promethazine,Tablet,Nowadly 2026 Figure 3G,2C

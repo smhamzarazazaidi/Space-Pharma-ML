@@ -1,0 +1,9 @@
+analyte,parent_ion_mz,daughter_ion_mz,retention_time_min,assigned_mrm_function_window,cone_voltage_v,collision_voltage_v,dwell_time_ms
+Caffeine,195.05,138.04,2.95,2 (1.5 - 3.7),24,18,106
+Diazepam,285.04,154.01,4.99,3 (3.7 - 5.5),38,26,106
+Diphenhydramine,256.13,167.03,4.13,3 (3.7 - 5.5),16,12,106
+Epinephrine,183.99,166.02,0.85,1 (0.6 - 1.5),16,8,159
+Ketamine,238.06,125.0,3.16,2 (1.5 - 3.7),22,30,106
+Lidocaine,235.14,86.09,2.95,2 (1.5 - 3.7),28,22,106
+Naloxone,328.18,310.18,2.23,2 (1.5 - 3.7),28,20,159
+Promethazine,285.16,86.01,4.5,3 (3.7 - 5.5),28,18,106

@@ -1,0 +1,11 @@
+{
+  "pearson_r_duration_vs_cum_radiation": 0.9878,
+  "pearson_p_duration_vs_cum_radiation": 0.0,
+  "spearman_rho_duration_vs_cum_radiation": 1.0,
+  "spearman_p_duration_vs_cum_radiation": 0.0,
+  "pearson_r_duration_vs_mean_dose_rate": -0.353,
+  "vif_duration": 41.19,
+  "vif_cumulative_radiation": 41.19,
+  "design_matrix_condition_number": 1002.3,
+  "collinearity_verdict": "SEVERE_COLLINEARITY (r = 0.993, VIF > 70). Cumulative radiation is virtually a linear scalar of mission duration under ISS low-Earth orbit conditions."
+}

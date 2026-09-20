@@ -1,0 +1,9 @@
+check,result,status
+expected_rows_count_32,32,PASS
+no_duplicate_sample_ids,0,PASS
+all_flight_api_in_bounds_0_150_pct,"min=74.2%, max=100.8%",PASS
+all_ground_api_in_bounds_0_150_pct,"min=78.9%, max=103.6%",PASS
+no_negative_api_values,0,PASS
+all_radiation_values_positive,"min=104.74 mGy, max=698.933 mGy",PASS
+all_drugs_linked_to_pubchem,32,PASS (32/32)
+outcome_provenance_present,100% of rows have source and method references,PASS

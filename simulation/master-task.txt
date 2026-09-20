@@ -1,0 +1,1231 @@
+# MASTER TASK — Build a Historical ISS Pharmaceutical Environmental Exposure Dataset + Interactive Stability Simulator
+
+You are working inside an existing research project on:
+
+**“Interpretable Small-Data ML for Predicting Pharmaceutical Response and Stability Under Long-Duration Spaceflight Conditions.”**
+
+Do NOT treat this as a generic ML project.
+
+The scientific objectives are:
+
+1. Reconstruct the historical environmental exposure experienced by pharmaceutical lots flown in space.
+2. Link those exposures to experimentally measured pharmaceutical stability outcomes.
+3. Determine whether environmental exposure + molecular properties + formulation can explain pharmaceutical stability.
+4. Validate models on drugs not used during training.
+5. Eventually estimate stability for additional pharmaceuticals.
+6. Build a separate pharmaceutical vulnerability/prioritization ranking model.
+7. Build an interactive scientific simulator/UI for exploring these relationships.
+
+---
+
+# PART 0 — PRESERVE EXISTING PROJECT
+
+Do not overwrite, delete, rename, or silently modify existing validated datasets.
+
+The existing primary dataset is:
+
+`data/processed/master_dataset_v1.csv`
+
+It currently contains approximately:
+
+- 32 pharmaceutical lots
+- 8 APIs/drugs
+- multiple ISS missions
+- flight and matched terrestrial control measurements
+- molecular descriptors
+- radiation-derived variables
+- mission metadata
+- formulation information
+- measured API-retention outcomes
+
+Known APIs include:
+
+- Caffeine
+- Diazepam
+- Diphenhydramine
+- Epinephrine
+- Ketamine
+- Lidocaine
+- Naloxone
+- Promethazine
+
+Existing outcome variables include:
+
+- `flight_percent_api_remaining`
+- `ground_control_percent_api_remaining`
+- `relative_percent_diff_vs_control`
+- flight/control SD where available
+- exposure ANOVA information where available
+
+Existing radiation data also exists. Inspect the project before downloading duplicate data.
+
+Start by recursively examining:
+
+- `data/`
+- `docs/`
+- `results/`
+- `src/`
+- existing README/research notes
+- master dataset
+- radiation datasets
+- molecular descriptor datasets
+
+Create a project-state report before making major changes.
+
+---
+
+# PART 1 — DEFINE THE SCIENTIFIC TARGET
+
+The primary measured outcome should remain based on experimentally measured pharmaceutical stability.
+
+Primary candidate target:
+
+`relative_percent_diff_vs_control`
+
+defined as:
+
+ΔAPI = ((Flight API - Ground API) / Ground API) × 100
+
+Negative values indicate poorer API retention in flight relative to the matched ground control.
+
+Also calculate:
+
+Stability Ratio = (Flight API / Ground API) × 100
+
+Do NOT invent measured outcomes.
+
+Clearly distinguish:
+
+- measured values
+- derived values
+- reconstructed environmental exposure
+- model predictions
+- hypothetical simulation outputs
+
+Never label simulated values as experimental observations.
+
+---
+
+# PART 2 — DETERMINE EXACT EXPOSURE WINDOWS
+
+For every pharmaceutical lot:
+
+Determine, where supported by project data or primary sources:
+
+- mission
+- launch date/time
+- ISS arrival/docking date/time
+- ISS departure date/time
+- landing/return date/time
+- total spaceflight duration
+- time aboard ISS
+- expiration status
+- relevant storage interval
+
+Do NOT assume one global 2019–2021 interval.
+
+Each lot must have its own exposure window.
+
+Create:
+
+`data/processed/medication_exposure_windows.csv`
+
+Suggested columns:
+
+- lot_id
+- api
+- mission
+- launch_datetime
+- docking_datetime
+- departure_datetime
+- landing_datetime
+- iss_exposure_hours
+- total_spaceflight_hours
+- source
+- source_url_or_identifier
+- confidence
+- notes
+
+If an exact timestamp cannot be verified, mark it explicitly.
+
+Do NOT fabricate timestamps.
+
+---
+
+# PART 3 — COLLECT HISTORICAL ENVIRONMENTAL DATA
+
+We want actual historical environmental measurements corresponding as closely as possible to each medication's exposure window.
+
+PRIORITY SOURCE:
+
+NASA Open Science Data Repository / Environmental Data Application.
+
+Search authoritative sources including:
+
+- NASA OSDR Environmental Data Application
+- NASA OSDR
+- NASA RadLab
+- NASA Technical Reports Server
+- NASA mission archives
+- NASA Life Sciences / space biology environmental telemetry
+- relevant ESA/DLR datasets where NASA data are unavailable
+- peer-reviewed datasets/papers
+
+Prefer machine-readable raw data.
+
+For each environmental variable, record:
+
+- source organization
+- dataset
+- sensor/instrument
+- ISS module/location if available
+- measurement units
+- temporal resolution
+- time coverage
+- missingness
+- calibration/quality flags if available
+- download date
+- DOI/dataset identifier
+- URL
+- license/access notes
+
+Never silently use a secondary source when primary telemetry exists.
+
+---
+
+# PART 4 — ENVIRONMENTAL VARIABLES
+
+Search for historical measurements relevant to pharmaceutical storage.
+
+## Tier 1 — highest priority
+
+Collect if available:
+
+### Radiation
+
+- absorbed dose rate
+- cumulative absorbed dose
+- total dose
+- GCR contribution if available
+- South Atlantic Anomaly contribution if available
+- radiation variability
+- radiation peaks
+- instrument
+- sensor location
+
+Existing project radiation data must be inspected before collecting duplicates.
+
+### Temperature
+
+Collect time-series temperature corresponding to exposure intervals.
+
+### Relative humidity
+
+Collect time-series RH.
+
+### Carbon dioxide
+
+Collect CO₂ concentration or partial pressure.
+
+### Atmospheric/cabin pressure
+
+Collect pressure if historically available for relevant intervals.
+
+---
+
+# PART 5 — SECONDARY ENVIRONMENTAL VARIABLES
+
+Investigate availability and scientific relevance of:
+
+- oxygen concentration / partial pressure
+- atmospheric composition
+- light/dark cycles
+- airflow
+- vibration
+- acceleration
+- launch environment
+- return environment
+- storage location
+- packaging
+- thermal excursions
+- pressure excursions
+
+Do NOT automatically add every available variable to the predictive model.
+
+First determine whether it has:
+
+1. plausible pharmaceutical relevance,
+2. adequate temporal coverage,
+3. reliable provenance,
+4. meaningful variation,
+5. sufficient sample support.
+
+Document rejected variables and why they were rejected.
+
+---
+
+# PART 6 — LOCATION MISMATCH
+
+This is critical.
+
+A telemetry sensor somewhere on the ISS is NOT automatically the exact environment experienced by a medication.
+
+For every environmental stream, classify spatial relevance:
+
+A — same storage hardware/location
+
+B — same ISS module
+
+C — nearby/reasonably representative ISS cabin
+
+D — ISS-wide proxy
+
+E — unknown location
+
+Add:
+
+`spatial_relevance_grade`
+
+Do not describe Grade D/E measurements as exact medication exposure.
+
+Instead use wording such as:
+
+“proxy environmental exposure.”
+
+This distinction must survive through the paper and simulator.
+
+---
+
+# PART 7 — BUILD RAW ENVIRONMENTAL ARCHIVE
+
+Suggested structure:
+
+data/
+  raw/
+    environment/
+      radiation/
+      temperature/
+      humidity/
+      co2/
+      pressure/
+      oxygen/
+      acceleration/
+      other/
+
+Never modify raw downloaded files.
+
+Create checksums where practical.
+
+Create:
+
+`docs/ENVIRONMENT_DATA_PROVENANCE.md`
+
+For every dataset document:
+
+- source
+- citation
+- access date
+- time range
+- resolution
+- units
+- instrument
+- location
+- transformations
+- limitations
+
+---
+
+# PART 8 — NORMALIZE TELEMETRY
+
+Create a common temporal format.
+
+Use UTC.
+
+Standardize units.
+
+Example canonical schema:
+
+timestamp_utc
+mission
+variable
+value
+unit
+sensor
+sensor_location
+source
+quality_flag
+
+Preserve original units in metadata.
+
+Do not interpolate large missing intervals without explicitly recording it.
+
+---
+
+# PART 9 — CREATE EXPOSURE FEATURES
+
+Raw telemetry may contain millions of rows.
+
+Do NOT simply merge every sensor observation into the 32-row drug dataset.
+
+For each medication exposure interval derive scientifically interpretable features.
+
+## Radiation
+
+Calculate:
+
+- mean dose rate
+- median dose rate
+- maximum dose rate
+- standard deviation
+- cumulative dose
+- P95 dose rate
+- number of high-exposure events if scientifically definable
+- exposure variability
+
+## Temperature
+
+Calculate:
+
+- mean temperature
+- median
+- min
+- max
+- SD
+- range
+- P95
+- time above defensible threshold(s)
+- time below defensible threshold(s)
+- number of thermal excursions
+
+Do not invent thresholds. Cite pharmaceutical/storage standards or literature.
+
+## Relative humidity
+
+Calculate:
+
+- mean RH
+- min
+- max
+- SD
+- P95
+- time above relevant threshold if defensible
+- cumulative humidity burden if scientifically defensible
+
+## CO₂
+
+Calculate:
+
+- mean
+- median
+- max
+- SD
+- P95
+- time above defined threshold if justified
+
+## Pressure
+
+Calculate:
+
+- mean
+- min
+- max
+- SD
+- range
+- number/magnitude of excursions where meaningful
+
+---
+
+# PART 10 — TIME-INTEGRATED EXPOSURE
+
+Investigate representations such as:
+
+E_j = integral from launch to return of environmental factor j over time.
+
+Do NOT combine unlike units into one arbitrary exposure score.
+
+Keep individual exposure components initially.
+
+Possible conceptual vector:
+
+E_i = [
+radiation_cumulative,
+radiation_peak,
+temperature_mean,
+temperature_variability,
+temperature_excursion_hours,
+RH_mean,
+RH_variability,
+CO2_mean,
+CO2_peak,
+pressure_variability,
+mission_duration
+]
+
+The exact final features must be determined from available data and scientific justification.
+
+---
+
+# PART 11 — BUILD ENVIRONMENTAL EXPOSURE MATRIX
+
+Create:
+
+`data/processed/environmental_exposure_matrix_v1.csv`
+
+One row per pharmaceutical lot.
+
+Then create:
+
+`data/processed/master_dataset_v2_environment.csv`
+
+by carefully joining environmental features onto the existing master dataset.
+
+Never overwrite `master_dataset_v1.csv`.
+
+Run strict QC:
+
+- exactly expected lot count
+- no accidental duplicates
+- correct mission mapping
+- correct time intervals
+- correct units
+- environmental coverage percentage
+- missingness
+- impossible values
+- temporal overlap verification
+
+Generate:
+
+`docs/ENVIRONMENT_LINKAGE_QC.md`
+
+---
+
+# PART 12 — DATA COVERAGE REPORT
+
+For every lot × environmental variable calculate:
+
+- expected exposure hours
+- observed telemetry hours
+- coverage percentage
+- largest missing interval
+- sensor count
+- confidence grade
+
+Generate a heatmap showing environmental coverage.
+
+Do not hide missing data.
+
+---
+
+# PART 13 — EXPLORATORY ANALYSIS
+
+Before modeling, investigate:
+
+ΔAPI vs:
+
+- cumulative radiation
+- radiation rate
+- radiation variability
+- mission duration
+- temperature mean
+- temperature variability
+- thermal excursions
+- RH
+- CO₂
+- pressure
+- formulation
+- XLogP
+- TPSA
+- molecular weight
+- HBD
+- HBA
+- rotatable bonds
+- complexity
+
+Also investigate:
+
+- radiation vs mission duration
+- temperature vs mission
+- CO₂ vs mission
+- environmental variables against each other
+- chemistry × environment interactions
+
+Use:
+
+- Spearman correlations
+- confidence intervals
+- scatterplots
+- grouped plots
+- VIF
+- condition number
+- missingness analysis
+
+Do NOT interpret correlation as causation.
+
+---
+
+# PART 14 — STATIC FORMULA EXPERIMENTS
+
+Before complex ML, construct nested interpretable models.
+
+Examples:
+
+M0:
+ΔAPI = β0
+
+M1:
+ΔAPI = β0 + β1 Radiation
+
+M2:
+ΔAPI = β0 + β1 Duration
+
+M3:
+ΔAPI = β0 + β1 Radiation + β2 Duration
+
+M4:
+add selected environmental variables
+
+M5:
+add selected molecular descriptors
+
+M6:
+add formulation where justified
+
+M7:
+test limited scientifically motivated interactions.
+
+Possible interactions:
+
+Radiation × XLogP
+
+Radiation × TPSA
+
+Temperature variability × formulation
+
+Humidity × formulation
+
+Duration × formulation
+
+Do NOT test dozens of arbitrary interactions.
+
+Small-n discipline is mandatory.
+
+---
+
+# PART 15 — VALIDATION
+
+This is one of the most important requirements.
+
+Do NOT claim success because the model reproduces drugs used to fit it.
+
+Use:
+
+## Leave-One-Drug-Out Cross Validation
+
+For each of the 8 APIs:
+
+1. completely remove that API
+2. train on the other APIs
+3. predict the held-out API
+4. compare prediction with measured outcomes
+
+Report:
+
+- R² where meaningful
+- RMSE
+- MAE
+- prediction error
+- uncertainty
+- results per held-out drug
+- mean and median performance
+
+Also compare against simple baselines:
+
+- global mean
+- drug-independent mean
+- simple duration model
+- simple radiation model
+
+The key question:
+
+**Can environmental + molecular information generalize to a drug the model has never seen?**
+
+---
+
+# PART 16 — DYNAMIC ML
+
+Only after static diagnostics.
+
+Evaluate conservative models suitable for very small datasets.
+
+Candidates:
+
+- Ridge
+- Elastic Net
+- PLS if justified
+- Random Forest with strong regularization
+- shallow Gradient Boosting
+- XGBoost only with extremely constrained complexity
+- Gaussian Process if scientifically appropriate
+
+Do not assume deep learning.
+
+Do not optimize dozens of hyperparameters on 32 observations.
+
+All models must use group-aware validation.
+
+Compare:
+
+A. chemistry only
+
+B. environment only
+
+C. duration + radiation
+
+D. chemistry + environment
+
+E. chemistry + environment + formulation
+
+This ablation study is essential.
+
+---
+
+# PART 17 — UNCERTAINTY
+
+Every future drug prediction must include uncertainty.
+
+Explore:
+
+- bootstrap confidence intervals
+- prediction intervals where available
+- ensemble variability
+- Gaussian-process uncertainty if used
+- uncertainty from environmental data coverage
+
+Never display a prediction like:
+
+“Stability = 91.37%”
+
+without communicating uncertainty.
+
+Prefer:
+
+“Estimated stability: 91%, model interval: approximately X–Y%”
+
+when scientifically supported.
+
+---
+
+# PART 18 — NEW DRUG SIMULATION
+
+Only after validation.
+
+Allow a user to define a hypothetical/new drug using molecular descriptors such as:
+
+- molecular weight
+- XLogP
+- TPSA
+- HBD
+- HBA
+- rotatable bonds
+- heavy atom count
+- complexity
+- formulation
+
+If possible, support selecting known compounds whose descriptors already exist from trusted chemical databases.
+
+Then combine:
+
+Drug properties
++
+selected historical/synthetic mission environment
+→
+estimated pharmaceutical stability response.
+
+Clearly label this:
+
+**MODEL PREDICTION — NOT EXPERIMENTAL MEASUREMENT**
+
+---
+
+# PART 19 — PHARMACEUTICAL RANKING
+
+Do NOT simply call stability prediction the ranking formula.
+
+Ranking is a second-stage problem.
+
+Eventually investigate a vulnerability/priority score:
+
+Priority_i = g(
+predicted degradation,
+prediction uncertainty,
+environmental sensitivity,
+mission duration,
+formulation susceptibility,
+other scientifically justified factors
+)
+
+Do NOT assign arbitrary weights.
+
+Investigate data-driven or literature-supported weighting.
+
+Rank drugs by relative vulnerability only when scientifically defensible.
+
+Display uncertainty alongside rank.
+
+If two drugs have overlapping uncertainty, communicate that ranking may not be distinguishable.
+
+---
+
+# PART 20 — BUILD THE INTERACTIVE SIMULATOR
+
+After the data pipeline is functioning, build a polished interactive scientific application.
+
+Suggested stack:
+
+- Python scientific backend
+- FastAPI if backend API is needed
+- pandas/numpy
+- scikit-learn/statsmodels
+- Plotly
+- React/Next.js frontend if appropriate
+
+Reuse the project's existing technology where practical.
+
+The simulator should visually represent:
+
+**Drug → Space Environment → Exposure → Stability → Ranking**
+
+---
+
+# PART 21 — SIMULATOR UI
+
+Create a professional space-research visual interface.
+
+Do NOT make it look like a video game.
+
+It should look like a scientific NASA-style mission-analysis dashboard.
+
+Pages/panels:
+
+## Mission Timeline
+
+Show:
+
+Launch
+→ ascent
+→ docking
+→ ISS exposure
+→ departure
+→ return
+
+Allow timeline scrubbing.
+
+As time changes, show environmental measurements.
+
+## ISS Environment
+
+Display:
+
+- temperature
+- RH
+- CO₂
+- pressure
+- radiation dose rate
+- cumulative radiation
+
+Use synchronized time-series plots.
+
+## Pharmaceutical Panel
+
+Allow selection of:
+
+- caffeine
+- diazepam
+- diphenhydramine
+- epinephrine
+- ketamine
+- lidocaine
+- naloxone
+- promethazine
+
+Show:
+
+- molecular descriptors
+- formulation
+- mission
+- exposure duration
+- measured flight API
+- measured ground API
+- measured ΔAPI
+- model-predicted ΔAPI
+- prediction error
+
+This is essential for comparing model vs reality.
+
+## Environmental Playback
+
+Provide:
+
+Play
+Pause
+Timeline scrubber
+1× / 10× / 100× speed
+
+As playback progresses, update:
+
+- radiation
+- cumulative radiation
+- temperature
+- humidity
+- CO₂
+- pressure
+
+Do NOT pretend environmental factors directly cause visible degradation in real time unless the model scientifically supports that interpretation.
+
+---
+
+# PART 22 — VISUAL VALIDATION MODE
+
+Create a dedicated:
+
+**Measured vs Predicted**
+
+view.
+
+For each of the 8 drugs show:
+
+Measured stability
+vs
+Predicted stability
+
+Include error bars/uncertainty.
+
+Allow:
+
+- All drugs
+- individual drug
+- individual lot
+- individual mission
+
+Show held-out LODO predictions separately from fitted predictions.
+
+Never mix them.
+
+---
+
+# PART 23 — ENVIRONMENTAL LAYERS
+
+Allow toggling:
+
+Radiation
+Temperature
+Humidity
+CO₂
+Pressure
+
+Show how each changes over the mission timeline.
+
+Provide tooltips explaining units.
+
+---
+
+# PART 24 — EXPERIMENT MODE
+
+Allow researchers to modify hypothetical conditions:
+
+Mission duration
+
+Radiation multiplier
+
+Temperature
+
+Temperature variability
+
+Humidity
+
+CO₂
+
+Pressure
+
+Drug/formulation
+
+But clearly label this mode:
+
+**HYPOTHETICAL SCENARIO**
+
+Historical telemetry must remain immutable.
+
+Provide a button:
+
+“Reset to historical mission.”
+
+---
+
+# PART 25 — NEW DRUG MODE
+
+Allow a user to select or enter a new pharmaceutical descriptor profile.
+
+Show:
+
+Predicted ΔAPI
+Predicted stability
+uncertainty
+distance from training domain
+
+Implement an out-of-distribution warning.
+
+For example:
+
+“WARNING: This compound's molecular properties lie outside the range represented by the training drugs. Prediction reliability is low.”
+
+This is mandatory.
+
+---
+
+# PART 26 — RANKING DASHBOARD
+
+For a selected mission/scenario show a table:
+
+Drug
+Predicted Stability
+Predicted Degradation
+Uncertainty
+Environmental Sensitivity
+Priority/Vulnerability Rank
+Confidence
+
+Allow sorting.
+
+Do not hide uncertainty.
+
+---
+
+# PART 27 — SCIENTIFIC EXPLAINABILITY
+
+For each prediction provide an explanation panel.
+
+Depending on model:
+
+- coefficients
+- permutation importance
+- SHAP only if methodologically appropriate
+- partial dependence with strong caution given small n
+- sensitivity analysis
+
+Answer:
+
+“What factors caused the model to produce this estimate?”
+
+Do not present ML explanations as causal proof.
+
+---
+
+# PART 28 — HISTORICAL VS SIMULATED DATA
+
+Use clear visual labels:
+
+GREEN/appropriate UI indicator:
+Measured Experimental Outcome
+
+BLUE/appropriate UI indicator:
+Historical Environmental Telemetry
+
+ORANGE/appropriate UI indicator:
+Model Prediction
+
+PURPLE/appropriate UI indicator:
+Hypothetical Simulation
+
+Choose accessible colors and provide text labels so meaning does not depend only on color.
+
+Never allow users to confuse them.
+
+---
+
+# PART 29 — DATA PROVENANCE UI
+
+Every environmental graph should expose:
+
+Source
+Dataset
+Sensor
+Time coverage
+Units
+Spatial relevance
+Data coverage
+Citation
+
+Add a “Data Provenance” panel.
+
+Scientific traceability is more important than visual decoration.
+
+---
+
+# PART 30 — OUTPUT STRUCTURE
+
+Suggested additions:
+
+data/
+  raw/
+    environment/
+  interim/
+    environment/
+  processed/
+    medication_exposure_windows.csv
+    environmental_exposure_matrix_v1.csv
+    master_dataset_v2_environment.csv
+
+src/
+  environment/
+    collect_environment.py
+    normalize_environment.py
+    build_exposure_windows.py
+    engineer_exposure_features.py
+    validate_environment.py
+
+  modeling/
+    static_formula_v2.py
+    lodo_validation.py
+    ml_stability.py
+    uncertainty.py
+    ranking.py
+
+  simulator/
+    backend/
+    frontend/
+
+results/
+  figures/
+    environment/
+    stability/
+    validation/
+    ranking/
+
+  tables/
+    environment/
+    models/
+    validation/
+
+docs/
+  ENVIRONMENT_DATA_PROVENANCE.md
+  ENVIRONMENT_LINKAGE_QC.md
+  SIMULATION_METHOD.md
+  MODEL_VALIDATION.md
+  LIMITATIONS.md
+  DATA_DICTIONARY_V2.md
+
+---
+
+# PART 31 — SCIENTIFIC GUARDRAILS
+
+These are mandatory.
+
+Never:
+
+- invent telemetry
+- fabricate missing sensor measurements
+- call simulated data experimental data
+- claim causal effects from correlation
+- claim validation using training observations
+- report fitted predictions as unseen-drug performance
+- hide negative cross-validation results
+- extrapolate without warning
+- assume ISS-wide telemetry exactly equals medication storage conditions
+- treat 32 lots as 32 completely independent drugs
+- use random row train/test splitting when rows from the same drug occur in both sets
+- add hundreds of engineered features to 32 observations
+- optimize the model until it reproduces the measured values
+- report false precision
+
+---
+
+# PART 32 — RESEARCH SUCCESS CRITERIA
+
+Success is NOT:
+
+“The simulator reproduces all 32 observations exactly.”
+
+That could indicate overfitting.
+
+Success should be assessed by:
+
+1. quality of historical environmental reconstruction,
+2. transparent data provenance,
+3. environmental coverage,
+4. improvement over baseline models,
+5. cross-drug generalization,
+6. LODO performance,
+7. uncertainty calibration,
+8. interpretability,
+9. robustness of stability ranking,
+10. scientifically defensible conclusions.
+
+---
+
+# PART 33 — FIRST EXECUTION PHASE
+
+DO NOT immediately build the entire simulator.
+
+Execute in stages.
+
+PHASE A:
+
+1. inspect existing project
+2. identify exact pharmaceutical exposure windows
+3. audit existing radiation data
+4. identify authoritative telemetry sources
+5. determine which variables have historical coverage
+6. download only verifiable raw datasets
+7. create provenance documentation
+8. report missing variables/data gaps
+
+STOP.
+
+Present a report containing:
+
+- medication exposure windows
+- available environmental variables
+- source for each
+- date coverage
+- temporal resolution
+- spatial relevance
+- whether downloadable
+- missingness/problems
+- recommended variables for modeling
+
+Do NOT start ML or build the final UI until Phase A has been reviewed.
+
+After Phase A approval:
+
+PHASE B:
+normalize telemetry + build exposure matrix.
+
+PHASE C:
+EDA + static formula diagnostics.
+
+PHASE D:
+LODO model validation.
+
+PHASE E:
+dynamic ML + uncertainty.
+
+PHASE F:
+new-drug extrapolation.
+
+PHASE G:
+vulnerability ranking.
+
+PHASE H:
+interactive scientific simulator.
+
+---
+
+# FINAL RESEARCH QUESTION
+
+Keep this question visible throughout development:
+
+**Can historical spaceflight environmental telemetry, combined with pharmaceutical physicochemical and formulation characteristics, explain measured differences in pharmaceutical stability and support interpretable estimation and vulnerability ranking for previously unseen drugs under long-duration spaceflight conditions?**
+
+Do not change the scientific question merely to obtain better model metrics.
+
+Start with **PHASE A ONLY** and show me the audit before proceeding.

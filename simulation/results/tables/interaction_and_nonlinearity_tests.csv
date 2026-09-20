@@ -1,0 +1,9 @@
+interaction_or_transform,feature_column,base_model,coefficient,t_statistic,p_value,r2_incremental,is_significant_p05,scientific_interpretation
+Radiation × XLogP (Lipophilicity/Membrane radiation sensitivity),rad_x_xlogp,ΔAPI = β0 + β1 Days + β2 Term,0.014798,3.054,0.0048,0.2432,True,Statistically significant candidate
+Radiation × TPSA (Polarity/Oxidation vulnerability),rad_x_tpsa,ΔAPI = β0 + β1 Days + β2 Term,-0.001416,-4.293,0.0002,0.3883,True,Statistically significant candidate
+Radiation × Solid (Packaging/Crystalline lattice shielding),rad_x_solid,ΔAPI = β0 + β1 Days + β2 Term,-0.017704,-0.833,0.4115,0.0234,False,Not statistically distinguishable from noise in N=32 cohort
+Duration × Solid (Solid-state degradation kinetics),dur_x_solid,ΔAPI = β0 + β1 Days + β2 Term,-0.004878,-0.858,0.3979,0.0247,False,Not statistically distinguishable from noise in N=32 cohort
+Radiation × Complexity (Molecular fragility),rad_x_complexity,ΔAPI = β0 + β1 Days + β2 Term,-3e-05,-0.438,0.6645,0.0066,False,Not statistically distinguishable from noise in N=32 cohort
+Radiation² (Nonlinear dose accumulation),rad_sq,ΔAPI = β0 + β1 Days + β2 Term,0.000564,0.987,0.332,0.0324,False,Not statistically distinguishable from noise in N=32 cohort
+Duration² (Accelerated kinetic degradation),dur_sq,ΔAPI = β0 + β1 Days + β2 Term,6e-06,0.38,0.707,0.0049,False,Not statistically distinguishable from noise in N=32 cohort
+log(Radiation) (Sublinear log-dose response),log_rad,ΔAPI = β0 + β1 Days + β2 Term,-2.668841,-0.533,0.5982,0.0097,False,Not statistically distinguishable from noise in N=32 cohort

@@ -1,0 +1,33 @@
+sample_id,mission,drug_name,formulation,dosage,start_date,end_date,days_in_space,days_expired,manufacturer,packaging,source_reference
+DS01_01,SpX-15,Caffeine,Tablet,200 mg,2018-07-02,2019-01-17,199,1584,Major,Amber ziplock (JSC),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_02,SpX-15,Diphenhydramine,Capsule,25 mg,2018-07-02,2019-08-30,424,1096,Major,Blister pack (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_03,SpX-15,Diphenhydramine,Solution,50 mg/mL,2018-07-02,2019-08-30,424,1523,West-Ward,Single-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_04,SpX-15,Epinephrine,Autoinjector,0.1 mg/mL,2018-07-02,2019-08-30,424,1614,Hospira,Syringe (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_05,SpX-15,Lidocaine,Solution,10 mg/mL,2018-07-02,2019-08-30,424,1523,Fresenius Kabi,Multi-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_06,SpX-15,Naloxone,Solution,1 mg/mL,2018-07-02,2019-08-30,424,1462,International Mediation Systems,Syringe (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_07,SpX-15,Promethazine,Solution,25 mg/mL,2018-07-02,2019-08-30,424,1554,West-Ward,Single-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_08,SpX-15,Promethazine,Tablet,25 mg,2018-07-02,2019-01-17,199,1676,McKesson,Blister pack (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_09,SpX-16,Caffeine,Tablet,200 mg,2018-12-08,2019-08-30,265,853,Walgreens,Amber ziplock (JSC),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_10,SpX-16,Promethazine,Tablet,25 mg,2018-12-08,2019-08-30,265,1310,Amneal,Blister pack (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_11,SpX-17,Epinephrine,Autoinjector,0.1 mg/mL,2019-05-06,2020-01-09,248,1338,Hospira,Syringe (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_12,NG-11,Diphenhydramine,Solution,50 mg/mL,2019-04-19,2019-08-29,132,1065,Hikma,Single-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_13,NG-11,Lidocaine,Solution,10 mg/mL,2019-04-19,2019-08-29,132,945,Fresenius Kabi,Multi-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_14,NG-11,Promethazine,Solution,25 mg/mL,2019-04-19,2019-08-29,132,1096,Hikma,Single-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_15,SpX-18,Caffeine,Tablet,200 mg,2019-07-27,2020-01-09,166,670,Walgreens,Amber ziplock (JSC),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_16,SpX-18,Diazepam,Solution,5 mg/mL,2019-07-27,2020-01-09,166,1278,Hospira,Multi-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_17,SpX-18,Diphenhydramine,Capsule,25 mg,2019-07-27,2020-04-09,257,731,Major,Blister pack (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_18,SpX-18,Diphenhydramine,Solution,50 mg/mL,2019-07-27,2020-04-09,257,1065,Hikma,Single-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_19,SpX-18,Ketamine,Solution,50 mg/mL,2019-07-27,2020-04-09,257,823,Mylan,Multi-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_20,SpX-18,Lidocaine,Solution,10 mg/mL,2019-07-27,2020-04-09,257,670,Fresenius Kabi,Multi-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_21,SpX-18,Naloxone,Solution,1 mg/mL,2019-07-27,2020-04-09,257,1096,International Mediation Systems,Syringe (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_22,SpX-18,Promethazine,Solution,25 mg/mL,2019-07-27,2020-04-09,257,1096,Hikma,Single-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_23,SpX-18,Promethazine,Tablet,25 mg,2019-07-27,2020-04-09,257,1157,McKesson,Blister pack (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_24,SpX-20,Caffeine,Tablet,200 mg,2020-03-09,2021-01-16,313,549,Walgreens,Amber ziplock (JSC),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_25,SpX-20,Diazepam,Solution,5 mg/mL,2020-03-09,2022-11-06,972,930,Hospira,Multi-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_26,SpX-20,Diphenhydramine,Capsule,25 mg,2020-03-09,2021-07-12,490,580,Major,Blister pack (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_27,SpX-20,Diphenhydramine,Solution,50 mg/mL,2020-03-09,2021-07-12,490,823,Fresenius Kabi,Single-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_28,SpX-20,Ketamine,Solution,50 mg/mL,2020-03-09,2021-07-12,490,670,Mylan,Multi-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_29,SpX-20,Lidocaine,Solution,10 mg/mL,2020-03-09,2021-07-12,490,670,Fresenius Kabi,Multi-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_30,SpX-20,Naloxone,Solution,1 mg/mL,2020-03-09,2021-10-03,573,731,International Mediation Systems,Syringe (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_31,SpX-20,Promethazine,Solution,25 mg/mL,2020-03-09,2021-07-12,490,792,Hikma,Single-dose vial (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests
+DS01_32,SpX-20,Promethazine,Tablet,25 mg,2020-03-09,2021-01-16,313,1065,McKesson,Blister pack (MFR),Nowadly et al. 2026 (Table 1) & NASA Mission Manifests

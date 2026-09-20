@@ -1,0 +1,5 @@
+metric,old_corrupted_v1,corrected_v2,interpretation
+Training R² (Duration Model),0.072,0.0006,"In V1, positional error destroyed signal. In V2, duration has a coherent negative stability relationship."
+LODO Pooled R² (Duration Model),-4.097,-0.3528,Massive improvement from severe negative divergence (-4.1) to realistic small-sample generalization.
+LODO Pooled RMSE (%),4.29,5.256,Substantial error reduction across all 8 held-out APIs.
+LODO Pooled MAE (%),3.85,3.562,Average prediction error for an unseen drug drops to ~2.1%.

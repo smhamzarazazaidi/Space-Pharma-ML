@@ -1,0 +1,5 @@
+test,statistic,p_value,df,significant
+Kruskal-Wallis: Drug effect on Degradation Delta,2.6127,0.918373,7,False
+Mann-Whitney: Formulation (Solid vs Liquid),125.0,0.720906,1,False
+Kruskal-Wallis: Mission effect on Degradation Delta,7.7388,0.171232,5,False
+Kruskal-Wallis: Duration Tertile on Degradation Delta,0.3553,0.837234,2,False

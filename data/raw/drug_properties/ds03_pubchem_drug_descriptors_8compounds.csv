@@ -1,0 +1,9 @@
+﻿"drug_name","pubchem_cid","molecular_formula","molecular_weight_gmol","xlogp","tpsa_angstrom2","rotatable_bonds","hbond_donors","hbond_acceptors","heavy_atom_count","complexity","inchikey","iupac_name","isomeric_smiles"
+"Caffeine","2519","C8H10N4O2","194.19","-0.1","58.4","0","0","3","14","293","RYYVLZVUVIJVGH-UHFFFAOYSA-N","1,3,7-trimethylpurine-2,6-dione",
+"Diazepam","3016","C16H13ClN2O","284.74","3","32.7","1","0","2","20","403","AAOVKJBEBIDNHE-UHFFFAOYSA-N","7-chloro-1-methyl-5-phenyl-3H-1,4-benzodiazepin-2-one",
+"Diphenhydramine","3100","C17H21NO","255.35","3.3","12.5","6","0","2","19","211","ZZVUWRFHKOJYTH-UHFFFAOYSA-N","2-benzhydryloxy-N,N-dimethylethanamine",
+"Epinephrine","5816","C9H13NO3","183.20","-1.4","72.7","3","4","4","13","154","UCTWMZQNUQWSLP-VIFPVBQESA-N","4-[(1R)-1-hydroxy-2-(methylamino)ethyl]benzene-1,2-diol",
+"Ketamine","3821","C13H16ClNO","237.72","2.2","29.1","2","1","2","16","269","YQEZLKZALYSWHR-UHFFFAOYSA-N","2-(2-chlorophenyl)-2-(methylamino)cyclohexan-1-one",
+"Lidocaine","3676","C14H22N2O","234.34","2.3","32.3","5","1","2","17","228","NNJVILVZKWQKPM-UHFFFAOYSA-N","2-(diethylamino)-N-(2,6-dimethylphenyl)acetamide",
+"Naloxone","5284596","C19H21NO4","327.4","2.1","70","2","2","5","24","594","UZHSEJADLWPNLE-GRGSLBFTSA-N","(4R,4aS,7aR,12bS)-4a,9-dihydroxy-3-prop-2-enyl-2,4,5,6,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-7-one",
+"Promethazine","4927","C17H20N2S","284.4","4.8","31.8","3","0","3","20","298","PWWVAXIEGOYWEE-UHFFFAOYSA-N","N,N-dimethyl-1-phenothiazin-10-ylpropan-2-amine",

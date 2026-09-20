@@ -1,0 +1,10 @@
+dataset,status,payload_archived,notes
+RR-7,downloaded,True,No missing telemetry values are synthesized
+RR-8,empty API response,True,No missing telemetry values are synthesized
+RR-12,downloaded,True,No missing telemetry values are synthesized
+RR-17,empty API response,True,No missing telemetry values are synthesized
+RR-19,downloaded,True,No missing telemetry values are synthesized
+RR-18,no completed response archived; acquisition batch interrupted,False,No missing telemetry values are synthesized
+RR-23,no completed response archived; acquisition batch interrupted,False,No missing telemetry values are synthesized
+RR-10,no completed response archived; acquisition batch interrupted,False,No missing telemetry values are synthesized
+RR-20,no completed response archived; acquisition batch interrupted,False,No missing telemetry values are synthesized

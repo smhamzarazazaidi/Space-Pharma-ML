@@ -1,0 +1,11 @@
+{
+  "url": "https://visualization.osdr.nasa.gov/eda/api/missions/RR-19/telemetry_data/?start=2018-06-29T00:00:00Z&end=2022-11-07T00:00:00Z",
+  "resolved_url": "https://visualization.osdr.nasa.gov/eda/api/missions/RR-19/telemetry_data/?start=2018-06-29T00:00:00Z&end=2022-11-07T00:00:00Z",
+  "status": 200,
+  "content_type": "application/json",
+  "retrieved_utc": "2026-09-19T19:03:39.854853+00:00",
+  "bytes": 1823352,
+  "sha256": "eae3e1509327ec9277b29cc465f842f06a35516aa0f1962669afaafe9109a18a",
+  "path": "data\\raw\\environment\\cabin\\RR-19_telemetry.json",
+  "license": "Publicly accessible; dataset-specific reuse terms require review"
+}

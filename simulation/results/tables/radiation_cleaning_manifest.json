@@ -1,0 +1,9 @@
+{
+  "original_row_count": 2336764,
+  "cleaned_row_count": 2333283,
+  "duplicate_rows_removed": 3481,
+  "affected_timestamp_pairs": 3481,
+  "cleaning_rule": "Preserve DosTel1 and DosTel2 channels independently; aggregate same-instrument same-timestamp conflicts using mean dose rate.",
+  "dose_rate_units": "uGy/h",
+  "temporal_span": "2018-06-01T00:00:28 to 2022-11-01T23:56:35"
+}

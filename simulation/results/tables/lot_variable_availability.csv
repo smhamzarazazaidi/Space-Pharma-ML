@@ -1,0 +1,193 @@
+lot_id,api,variable,expected_exposure_hours,observed_support_hours,coverage_percent,largest_missing_interval_hours,sensor_count,confidence,spatial_relevance_grade,gap_limit_seconds,status
+DS01_01,Caffeine,temperature,4704.0,1803.8666666666666,38.34750566893424,2818.0333333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_01,Caffeine,humidity,4704.0,1803.8666666666666,38.34750566893424,2818.0333333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_01,Caffeine,co2,4704.0,1803.8666666666666,38.34750566893424,2818.0333333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_01,Caffeine,pressure,4704.0,0.0,0.0,4704.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_01,Caffeine,oxygen,4704.0,0.0,0.0,4704.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_02,Diphenhydramine,temperature,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_02,Diphenhydramine,humidity,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_02,Diphenhydramine,co2,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_02,Diphenhydramine,pressure,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_02,Diphenhydramine,oxygen,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_03,Diphenhydramine,temperature,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_03,Diphenhydramine,humidity,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_03,Diphenhydramine,co2,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_03,Diphenhydramine,pressure,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_03,Diphenhydramine,oxygen,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_04,Epinephrine,temperature,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_04,Epinephrine,humidity,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_04,Epinephrine,co2,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_04,Epinephrine,pressure,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_04,Epinephrine,oxygen,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_05,Lidocaine,temperature,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_05,Lidocaine,humidity,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_05,Lidocaine,co2,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_05,Lidocaine,pressure,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_05,Lidocaine,oxygen,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_06,Naloxone,temperature,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_06,Naloxone,humidity,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_06,Naloxone,co2,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_06,Naloxone,pressure,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_06,Naloxone,oxygen,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_07,Promethazine,temperature,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_07,Promethazine,humidity,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_07,Promethazine,co2,10104.0,2786.0,27.57323832145685,5069.35,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_07,Promethazine,pressure,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_07,Promethazine,oxygen,10104.0,0.0,0.0,10104.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_08,Promethazine,temperature,4704.0,1803.8666666666666,38.34750566893424,2818.0333333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_08,Promethazine,humidity,4704.0,1803.8666666666666,38.34750566893424,2818.0333333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_08,Promethazine,co2,4704.0,1803.8666666666666,38.34750566893424,2818.0333333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_08,Promethazine,pressure,4704.0,0.0,0.0,4704.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_08,Promethazine,oxygen,4704.0,0.0,0.0,4704.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_09,Caffeine,temperature,6288.0,982.1333333333333,15.619168787107718,3139.3166666666666,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_09,Caffeine,humidity,6288.0,982.1333333333333,15.619168787107718,3139.3166666666666,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_09,Caffeine,co2,6288.0,982.1333333333333,15.619168787107718,3139.3166666666666,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_09,Caffeine,pressure,6288.0,0.0,0.0,6288.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_09,Caffeine,oxygen,6288.0,0.0,0.0,6288.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_10,Promethazine,temperature,6288.0,982.1333333333333,15.619168787107718,3139.3166666666666,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_10,Promethazine,humidity,6288.0,982.1333333333333,15.619168787107718,3139.3166666666666,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_10,Promethazine,co2,6288.0,982.1333333333333,15.619168787107718,3139.3166666666666,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_10,Promethazine,pressure,6288.0,0.0,0.0,6288.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_10,Promethazine,oxygen,6288.0,0.0,0.0,6288.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_11,Epinephrine,temperature,5904.0,1374.5333333333333,23.281391147244808,4528.083333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_11,Epinephrine,humidity,5904.0,1374.5333333333333,23.281391147244808,4528.083333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_11,Epinephrine,co2,5904.0,1374.5333333333333,23.281391147244808,4528.083333333333,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_11,Epinephrine,pressure,5904.0,0.0,0.0,5904.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_11,Epinephrine,oxygen,5904.0,0.0,0.0,5904.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_12,Diphenhydramine,temperature,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_12,Diphenhydramine,humidity,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_12,Diphenhydramine,co2,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_12,Diphenhydramine,pressure,3120.0,0.0,0.0,3120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_12,Diphenhydramine,oxygen,3120.0,0.0,0.0,3120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_13,Lidocaine,temperature,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_13,Lidocaine,humidity,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_13,Lidocaine,co2,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_13,Lidocaine,pressure,3120.0,0.0,0.0,3120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_13,Lidocaine,oxygen,3120.0,0.0,0.0,3120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_14,Promethazine,temperature,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_14,Promethazine,humidity,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_14,Promethazine,co2,3120.0,953.45,30.559294871794872,2165.6833333333334,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_14,Promethazine,pressure,3120.0,0.0,0.0,3120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_14,Promethazine,oxygen,3120.0,0.0,0.0,3120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_15,Caffeine,temperature,3936.0,829.0833333333334,21.06410907859079,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_15,Caffeine,humidity,3936.0,829.0833333333334,21.06410907859079,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_15,Caffeine,co2,3936.0,829.0833333333334,21.06410907859079,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_15,Caffeine,pressure,3936.0,0.0,0.0,3936.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_15,Caffeine,oxygen,3936.0,0.0,0.0,3936.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_16,Diazepam,temperature,3936.0,829.0833333333334,21.06410907859079,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_16,Diazepam,humidity,3936.0,829.0833333333334,21.06410907859079,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_16,Diazepam,co2,3936.0,829.0833333333334,21.06410907859079,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_16,Diazepam,pressure,3936.0,0.0,0.0,3936.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_16,Diazepam,oxygen,3936.0,0.0,0.0,3936.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_17,Diphenhydramine,temperature,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_17,Diphenhydramine,humidity,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_17,Diphenhydramine,co2,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_17,Diphenhydramine,pressure,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_17,Diphenhydramine,oxygen,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_18,Diphenhydramine,temperature,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_18,Diphenhydramine,humidity,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_18,Diphenhydramine,co2,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_18,Diphenhydramine,pressure,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_18,Diphenhydramine,oxygen,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_19,Ketamine,temperature,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_19,Ketamine,humidity,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_19,Ketamine,co2,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_19,Ketamine,pressure,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_19,Ketamine,oxygen,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_20,Lidocaine,temperature,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_20,Lidocaine,humidity,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_20,Lidocaine,co2,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_20,Lidocaine,pressure,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_20,Lidocaine,oxygen,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_21,Naloxone,temperature,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_21,Naloxone,humidity,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_21,Naloxone,co2,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_21,Naloxone,pressure,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_21,Naloxone,oxygen,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_22,Promethazine,temperature,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_22,Promethazine,humidity,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_22,Promethazine,co2,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_22,Promethazine,pressure,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_22,Promethazine,oxygen,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_23,Promethazine,temperature,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_23,Promethazine,humidity,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_23,Promethazine,co2,6120.0,849.25,13.876633986928105,3106.4,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_23,Promethazine,pressure,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_23,Promethazine,oxygen,6120.0,0.0,0.0,6120.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_24,Caffeine,temperature,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_24,Caffeine,humidity,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_24,Caffeine,co2,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_24,Caffeine,pressure,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_24,Caffeine,oxygen,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_25,Diazepam,temperature,23280.0,0.0,0.0,23280.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_25,Diazepam,humidity,23280.0,0.0,0.0,23280.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_25,Diazepam,co2,23280.0,0.0,0.0,23280.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_25,Diazepam,pressure,23280.0,0.0,0.0,23280.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_25,Diazepam,oxygen,23280.0,0.0,0.0,23280.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_26,Diphenhydramine,temperature,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_26,Diphenhydramine,humidity,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_26,Diphenhydramine,co2,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_26,Diphenhydramine,pressure,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_26,Diphenhydramine,oxygen,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_27,Diphenhydramine,temperature,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_27,Diphenhydramine,humidity,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_27,Diphenhydramine,co2,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_27,Diphenhydramine,pressure,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_27,Diphenhydramine,oxygen,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_28,Ketamine,temperature,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_28,Ketamine,humidity,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_28,Ketamine,co2,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_28,Ketamine,pressure,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_28,Ketamine,oxygen,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_29,Lidocaine,temperature,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_29,Lidocaine,humidity,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_29,Lidocaine,co2,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_29,Lidocaine,pressure,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_29,Lidocaine,oxygen,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_30,Naloxone,temperature,13704.0,0.0,0.0,13704.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_30,Naloxone,humidity,13704.0,0.0,0.0,13704.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_30,Naloxone,co2,13704.0,0.0,0.0,13704.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_30,Naloxone,pressure,13704.0,0.0,0.0,13704.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_30,Naloxone,oxygen,13704.0,0.0,0.0,13704.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_31,Promethazine,temperature,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_31,Promethazine,humidity,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_31,Promethazine,co2,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_31,Promethazine,pressure,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_31,Promethazine,oxygen,11712.0,0.0,0.0,11712.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_32,Promethazine,temperature,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_32,Promethazine,humidity,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_32,Promethazine,co2,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,available timestamps only; not validated exposure
+DS01_32,Promethazine,pressure,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_32,Promethazine,oxygen,7464.0,0.0,0.0,7464.0,,provisional window; sensor identity/location unknown,E,600,no telemetry acquired; not proof no data exist
+DS01_01,Caffeine,radiation,4704.0,4683.673333333333,99.56788548752834,9.828888888888889,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_02,Diphenhydramine,radiation,10104.0,10067.009444444444,99.63390186504796,9.828888888888889,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_03,Diphenhydramine,radiation,10104.0,10067.009444444444,99.63390186504796,9.828888888888889,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_04,Epinephrine,radiation,10104.0,10067.009444444444,99.63390186504796,9.828888888888889,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_05,Lidocaine,radiation,10104.0,10067.009444444444,99.63390186504796,9.828888888888889,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_06,Naloxone,radiation,10104.0,10067.009444444444,99.63390186504796,9.828888888888889,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_07,Promethazine,radiation,10104.0,10067.009444444444,99.63390186504796,9.828888888888889,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_08,Promethazine,radiation,4704.0,4683.673333333333,99.56788548752834,9.828888888888889,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_09,Caffeine,radiation,6288.0,6270.275,99.71811386768448,2.485,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_10,Promethazine,radiation,6288.0,6270.275,99.71811386768448,2.485,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_11,Epinephrine,radiation,5904.0,5552.969722222222,94.05436521379104,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_12,Diphenhydramine,radiation,3120.0,3113.178611111111,99.78136574074074,0.8819444444444444,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_13,Lidocaine,radiation,3120.0,3113.178611111111,99.78136574074074,0.8819444444444444,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_14,Promethazine,radiation,3120.0,3113.178611111111,99.78136574074074,0.8819444444444444,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_15,Caffeine,radiation,3936.0,3589.5594444444446,91.19815661698284,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_16,Diazepam,radiation,3936.0,3589.5594444444446,91.19815661698284,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_17,Diphenhydramine,radiation,6120.0,5767.462222222222,94.23957879448076,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_18,Diphenhydramine,radiation,6120.0,5767.462222222222,94.23957879448076,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_19,Ketamine,radiation,6120.0,5767.462222222222,94.23957879448076,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_20,Lidocaine,radiation,6120.0,5767.462222222222,94.23957879448076,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_21,Naloxone,radiation,6120.0,5767.462222222222,94.23957879448076,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_22,Promethazine,radiation,6120.0,5767.462222222222,94.23957879448076,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_23,Promethazine,radiation,6120.0,5767.462222222222,94.23957879448076,336.0152777777778,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_24,Caffeine,radiation,7464.0,6725.948611111111,90.11185170298916,727.3747222222222,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_25,Diazepam,radiation,23280.0,17277.0675,74.21420747422681,3558.8175,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_26,Diphenhydramine,radiation,11712.0,10965.235555555557,93.6239374620522,727.3747222222222,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_27,Diphenhydramine,radiation,11712.0,10965.235555555557,93.6239374620522,727.3747222222222,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_28,Ketamine,radiation,11712.0,10965.235555555557,93.6239374620522,727.3747222222222,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_29,Lidocaine,radiation,11712.0,10965.235555555557,93.6239374620522,727.3747222222222,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_30,Naloxone,radiation,13704.0,12953.682222222222,94.52482649023806,727.3747222222222,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_31,Promethazine,radiation,11712.0,10965.235555555557,93.6239374620522,727.3747222222222,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption
+DS01_32,Promethazine,radiation,7464.0,6725.948611111111,90.11185170298916,727.3747222222222,2,best-covered single sensor; duplicate timestamps unresolved,D,300,provisional window; source UTC assumption

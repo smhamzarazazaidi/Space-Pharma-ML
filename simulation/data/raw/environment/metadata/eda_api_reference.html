@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Missions API Reference & How-To Guide</title>
+    <style>
+      /*body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #f9fafb;
+        color: #111827;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #1f2937;
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      h1,
+      h2 {
+        color: #1f2937;
+      }*/
+
+      details {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      }
+
+      /*summary {
+        cursor: pointer;
+        font-weight: 600;
+        padding: 1rem;
+        background-color: #f3f4f6;
+        border-radius: 8px 8px 0 0;
+      }
+
+      summary:hover {
+        background-color: #e5e7eb;
+      }*/
+
+      details[open] summary {
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      details pre,
+      details code {
+        background: #f3f4f6;
+        border-radius: 6px;
+        padding: 0.5em;
+        font-size: 0.9em;
+        overflow-x: auto;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      .example {
+        background: #eef2ff;
+        border-left: 4px solid #6366f1;
+        padding: 0.75em 1em;
+        font-family: monospace;
+      }
+
+      /*footer {
+        text-align: center;
+        font-size: 0.9em;
+        padding: 2rem 0;
+        color: #6b7280;
+      }
+
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }*/
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* --- Remove default disclosure triangle (cross-browser) --- */
+      summary::-webkit-details-marker {
+        display: none; /* Chrome, Safari, Edge */
+      }
+      summary::marker {
+        display: none; /* Firefox */
+      }
+      summary {
+        list-style: none; /* older browsers fallback */
+      }
+
+      /* --- Custom arrow icon --- */
+      summary {
+        position: relative;
+        padding-left: 1.75em;
+        cursor: pointer;
+        user-select: none;
+        font-weight: 600;
+        background-color: #f3f4f6;
+        border-radius: 8px 8px 0 0;
+      }
+
+      summary::before {
+        content: '▶'; /* right-pointing triangle */
+        position: absolute;
+        left: 0.25em;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1em; /* make it larger */
+        color: #4b5563;
+        transition: transform 0.2s ease, color 0.2s ease;
+      }
+
+      /* --- Rotate arrow when expanded --- */
+      details[open] summary::before {
+        transform: translateY(-50%) rotate(90deg);
+        color: #1f2937;
+      }
+    </style>
+  </head>
+
+  <body>
+    <br />
+    <br />
+    <h3 style="padding-left: 1rem">EDA API Reference & How-To Guide</h3>
+    <br />
+    <main style="padding-left: 1rem">
+      <section>
+        <h4>What Is an API?</h4>
+        <div style="padding-left: 1rem">
+          <p>
+            An <strong>API (Application Programming Interface)</strong> allows applications to communicate with each other. The EDA API
+            provides programmatic access to mission telemetry and radiation data through HTTP requests.
+          </p>
+          <p>You can access data using:</p>
+          <ul>
+            <li>The browser interface</li>
+            <li>Command-line tools like <code>curl</code></li>
+            <li>Programming languages such as Python, JavaScript, or R</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h4>Base URL</h4>
+        <div style="padding-left: 1rem">
+          <pre><code>https://visualization.osdr.nasa.gov/eda/api/</code></pre>
+        </div>
+      </section>
+
+      <section>
+        <h4>Endpoints</h4>
+        <div style="padding-left: 1rem">
+        <h5>Available Missions</h5>
+        <details>
+          <summary>1. <code>/missions/</code></summary>
+          <br />
+          <p>Returns a list of available missions, title, description and OSDR link.</p>
+          <div class="example"><a href="https://visualization.osdr.nasa.gov/eda/api/missions/" target="_blank">https://visualization.osdr.nasa.gov/eda/api/missions/</a></div>
+        </details>
+
+        <h5>Mission Details</h5>
+        <details>
+          <summary>2. <code>/missions/{mission_name}/</code></summary>
+          <br />
+          <p>
+            Returns name, title, description and OSDR link for a given mission. You can request the details for any mission avaialble on EDA
+            by replacing {mission_name} with RR-1, RR-3, RR-4, RR-5, RR-6, RR-7, RR-8, RR-9, RR-12, RR-17, RR-18, RR-19, RR-23, APEX-03-1,
+            APEX-03-2, APEX-04, VEG-01A, VEG-01B or VEG-01C.
+          </p>
+          <div class="example"><a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-1/" target="_blank">https://visualization.osdr.nasa.gov/eda/api/missions/RR-1/</a></div>
+        </details>
+
+        <h5>Telemetry data</h5>
+        <details>
+          <summary>3. <code>/missions/{mission_name}/telemetry_data/</code></summary>
+          <br />
+          <p>
+            Returns time-series data for temperature, relative humidity and CO2 measurements (ISS and ground control) for a given mission.
+          </p>
+          <div class="example">
+            <a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-1/telemetry_data/" target="_blank">https://visualization.osdr.nasa.gov/eda/api/missions/RR-1/telemetry_data/</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>4. <code>/missions/{mission_name}/{telemetry_measurement}/</code></summary>
+          <br />
+          <p>
+            Returns time-series data for a specific telemetry measurement (ISS and ground control). You can replace {telemetry_measurement}
+            with temperature, humidity or co2.
+          </p>
+          <div class="example">
+            <a href="https://visualization.osdr.nasa.gov/eda//api/missions/RR-1/temperature/" target="_blank">https://visualization.osdr.nasa.gov/eda//api/missions/RR-1/temperature/</a><br />
+            <a href="https://visualization.osdr.nasa.gov/eda//api/missions/RR-3/co2/" target="_blank">https://visualization.osdr.nasa.gov/eda//api/missions/RR-3/co2/</a><br />
+            <a href="https://visualization.osdr.nasa.gov/eda//api/missions/RR-5/humidity/" target="_blank">https://visualization.osdr.nasa.gov/eda//api/missions/RR-5/humidity/</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>5. <code>/missions/{mission_name}/{telemetry_measurement}/iss/</code></summary>
+          <br />
+          <p>Returns time-series data for a specific telemetry measurement collected on the ISS.</p>
+          <div class="example">
+            <a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-6/temperature/iss/" target="_blank"> https://visualization.osdr.nasa.gov/eda/api/missions/RR-6/temperature/iss/</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>6. <code>/missions/{mission_name}/{telemetry_measurement}/ground/</code></summary>
+          <br />
+          <p>Returns time-series data for a specific telemetry measurement collected on ground control.</p>
+          <div class="example">
+            <a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-6/temperature/ground/" target="_blank"
+              >https://visualization.osdr.nasa.gov/eda/api/missions/RR-6/temperature/ground/</a
+            >
+          </div>
+        </details>
+
+        <h5>Radiation data</h5>
+        <details>
+          <summary>7. <code>/missions/{mission_name}/radiation_data/</code></summary>
+          <br />
+          <p>
+            Returns time-series data for Galactic Cosmic Ray (GCR), South Atlantic Anomaly (SAA) and Total Radiation measurements for a
+            given mission.
+          </p>
+          <div class="example">
+            <a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-1/radiation_data/" target="_blank">https://visualization.osdr.nasa.gov/eda/api/missions/RR-1/radiation_data/</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>8. <code>/missions/{mission_name}/{radiation_measurement}/</code></summary>
+          <br />
+          <p>
+            Returns time-series data for a specific radiation measurement. You can replace {radiation_measurement} with gcr, saa or total.
+          </p>
+          <div class="example"><a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-9/gcr/" target="_blank">https://visualization.osdr.nasa.gov/eda/api/missions/RR-9/gcr/</a></div>
+          <div class="example"><a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-9/saa/" target="_blank">https://visualization.osdr.nasa.gov/eda/api/missions/RR-9/saa/</a></div>
+          <div class="example"><a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-9/total/" target="_blank">https://visualization.osdr.nasa.gov/eda/api/missions/RR-9/total/</a></div>
+        </details>
+      </section>
+      </div>
+      <br />
+      <section>
+        <h4>Filtering with Query Parameters</h4>
+        <div style="padding-left: 1rem">
+        <p>
+          You can filter telemetry or radiation data by date range using the <code>start</code> and <code>end</code> parameters. Both
+          parameters expect timestamps in ISO 8601 format (<code>YYYY-MM-DDTHH:MM:SSZ</code>).
+        </p>
+
+        <h5>Examples:</h5>
+        <div class="example">
+          <a href="https://visualization.osdr.nasa.gov/eda/api/missions/RR-1/temperature/?start=2014-09-21T00:00:00Z&end=2014-10-20T00:00:00Z" target="_blank"
+            >https://visualization.osdr.nasa.gov/eda/api/missions/RR-1/temperature/?start=2014-09-21T00:00:00Z&end=2014-10-20T00:00:00Z</a
+          >
+        </div>
+        <div class="example">
+          <a href="https://visualization.osdr.nasa.gov/eda//api/missions/RR-1/temperature/?start=2014-09-21T00:00:00Z" target="_blank"
+            >https://visualization.osdr.nasa.gov/eda//api/missions/RR-1/temperature/?start=2014-09-21T00:00:00Z</a
+          >
+        </div>
+        <div class="example">
+          <a href="https://visualization.osdr.nasa.gov/eda//api/missions/RR-1/temperature/?end=2014-09-21T21:29:00Z" target="_blank"
+            >https://visualization.osdr.nasa.gov/eda//api/missions/RR-1/temperature/?end=2014-09-21T21:29:00Z</a
+          >
+        </div>
+        <p>If no <code>start</code> or <code>end</code> is provided, the full dataset is returned.</p>
+        </div>
+      </section>
+
+      <section>
+        <h4>How to Use the API</h4>
+        <div style="padding-left: 1rem">
+        <details open>
+          <summary>Using the Browser UI</summary>
+          <br />
+          <p>
+            Visit any endpoint (e.g. <a href="https://visualization.osdr.nasa.gov/eda/api/missions/" target="_blank">https://visualization.osdr.nasa.gov/eda/api/missions/</a>) in your browser to
+            access the user interface. It supports pagination, search, and interactive requests.
+          </p>
+        </details>
+
+        <details>
+          <summary>Using Python (<code>requests</code>)</summary>
+          <br />
+          <pre><code>import requests
+
+url = "https://visualization.osdr.nasa.gov/eda/api/missions/"
+response = requests.get(url)
+data = response.json()
+print(data["data"][:5])</code></pre>
+        </details>
+
+        <details>
+          <summary>Using JavaScript (Fetch API)</summary>
+          <br />
+          <pre><code>const url = "https://visualization.osdr.nasa.gov/eda/api/missions/";
+
+fetch(url)
+  .then(res => res.json())
+  .then(data => console.log("EDA missions:", data.data))
+  .catch(err => console.error("Error:", err));</code></pre>
+        </details>
+
+        <details>
+          <summary>Using curl</summary>
+          <br />
+          <pre><code>curl https://visualization.osdr.nasa.gov/eda/api/missions/</code></pre>
+        </details>
+
+        <details>
+          <summary>Using R</summary>
+          <br />
+          <pre><code>library(httr)
+library(jsonlite)
+
+url <- "https://visualization.osdr.nasa.gov/eda/api/missions/"
+res <- GET(url)
+data <- fromJSON(content(res, "text"))
+print(head(data$data))</code></pre>
+        </details>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+# Experiment Configuration for Space Pharmacology ML Research
+project:
+  name: "Interpretable Small-Data ML for Predicting Pharmaceutical Response and Stability Under Long-Duration Spaceflight Conditions"
+  version: "0.1.0"
+  random_seed: 42
+
+paths:
+  raw_data_dir: "data/raw"
+  interim_data_dir: "data/interim"
+  processed_data_dir: "data/processed"
+  external_data_dir: "data/external"
+  models_dir: "models"
+  results_tables_dir: "results/tables"
+  results_figures_dir: "results/figures"
+  results_metrics_dir: "results/metrics"
+  results_formulas_dir: "results/formulas"
+
+dataset_audit:
+  status: "PENDING_INSPECTION" # Target will be defined following Phase 1 Dataset Audit
+  target_variable: null        # Defined strictly after auditing real datasets
+
+validation:
+  strategy: "group_cross_validation" # Candidate: GroupKFold / Leave-One-Drug-Out / Leave-One-Study-Out
+  group_column: null                 # Defined after data provenance and dictionary are established
+  n_splits: 5
+  bootstrap_iterations: 1000
+
+models:
+  baselines:
+    - "mean_regressor"
+    - "median_regressor"
+    - "ordinary_least_squares"
+    - "ridge"
+    - "lasso"
+  interpretable_ml:
+    - "decision_tree"
+    - "random_forest"
+    - "gradient_boosting"
+    - "xgboost"
+    - "lightgbm"
+    - "support_vector_regression"
+    - "knn_regressor"
+  symbolic_regression:
+    enabled: false # Enabled only after dataset suitability confirmation
+    package: null
+
+compute:
+  device: "cpu"
+  n_jobs: -1

@@ -1,0 +1,9 @@
+analyte,target_concentration_ug_ml,calibrator_25pct_ug_ml,calibrator_50pct_ug_ml,calibrator_100pct_ug_ml,diluent,dilution_factor
+Caffeine,40.0,12.5,25.0,50.0,10% MeOH (#1),200000
+Diazepam,12.0,3.75,7.5,15.0,10% MeOH (#1),5000
+Diphenhydramine,0.8,0.25,0.5,1.0,10% MeOH (#1),"50000 (liquid), 25000 (solid)"
+Epinephrine,8.0,2.5,5.0,10.0,10% MeOH (#1),100
+Ketamine,4.0,1.25,2.5,5.0,10% MeOH (#1),50000
+Lidocaine,0.4,0.125,0.25,0.5,10% MeOH (#1),10
+Naloxone,16.0,5.0,10.0,20.0,10% MeOH (#1),1000
+Promethazine,1.6,0.5,1.0,2.0,10% MeOH + 0.1% FA (#2),25000 (both forms)

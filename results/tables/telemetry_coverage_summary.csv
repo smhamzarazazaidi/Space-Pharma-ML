@@ -1,0 +1,7 @@
+variable,mean_coverage_pct,median_coverage_pct,count_gt_90_pct,count_gt_75_pct,count_gt_50_pct,count_lt_50_pct,usability_tier
+Radiation,88.1,89.0,13,31,32,0,GREEN
+Temperature,16.8,14.6,0,0,0,32,YELLOW
+Humidity,16.8,14.6,0,0,0,32,YELLOW
+CO2,16.8,14.6,0,0,0,32,YELLOW
+Pressure,0.0,0.0,0,0,0,32,RED
+Oxygen,0.0,0.0,0,0,0,32,RED

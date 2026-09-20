@@ -1,0 +1,11 @@
+{
+  "url": "https://visualization.osdr.nasa.gov/eda/api_reference",
+  "resolved_url": "https://visualization.osdr.nasa.gov/eda/api_reference",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_utc": "2026-09-19T18:55:08.403725+00:00",
+  "bytes": 12604,
+  "sha256": "bf25f8f1898e13c91de1d03ded2959a0e870cae04657cd5e521242bf570bedd4",
+  "path": "data\\raw\\environment\\metadata\\eda_api_reference.html",
+  "license": "Publicly accessible; dataset-specific reuse terms require review"
+}

@@ -1,0 +1,7 @@
+term,coefficient,units,interpretation,lodo_r2_mean,lodo_r2_ci_lo,lodo_r2_ci_hi,train_r2,train_rmse_pct
+Intercept,-1.022969,%,Expected Delta%API when all predictors zero,-4.097153780624308,-11.668254140386312,-0.042784121259737684,0.0718326486829135,3.991994120860229
+Days in Space,-0.079111,% per unit of days_in_space,Change in Delta%API per 1-unit increase in days_in_space,-4.097153780624308,-11.668254140386312,-0.042784121259737684,0.0718326486829135,3.991994120860229
+Cumul. Dose (Gy),106.051469,% per unit of cumulative_dose_Gy,Change in Delta%API per 1-unit increase in cumulative_dose_Gy,-4.097153780624308,-11.668254140386312,-0.042784121259737684,0.0718326486829135,3.991994120860229
+XLogP,-0.06874,% per unit of xlogp,Change in Delta%API per 1-unit increase in xlogp,-4.097153780624308,-11.668254140386312,-0.042784121259737684,0.0718326486829135,3.991994120860229
+TPSA (A2),-0.015863,% per unit of tpsa_angstrom2,Change in Delta%API per 1-unit increase in tpsa_angstrom2,-4.097153780624308,-11.668254140386312,-0.042784121259737684,0.0718326486829135,3.991994120860229
+Is Solid (0/1),-0.833794,% per unit of is_solid,Change in Delta%API per 1-unit increase in is_solid,-4.097153780624308,-11.668254140386312,-0.042784121259737684,0.0718326486829135,3.991994120860229
