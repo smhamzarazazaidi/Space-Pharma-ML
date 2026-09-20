@@ -1,0 +1,44 @@
+{
+  "simulation_id": "6bd6250b-ab22-484c-836d-8c728cb8659f",
+  "created_utc": "2026-09-20T17:08:25.487785+00:00",
+  "mode": "HISTORICAL_REPLAY",
+  "lot_ids": [
+    "DS01_01"
+  ],
+  "apis": [
+    "Caffeine"
+  ],
+  "missions": [
+    "SpX-15"
+  ],
+  "environment_data_version": "phase-d-v0",
+  "model_version": "D-v0",
+  "validation_type": "LODO",
+  "held_out_apis": [
+    "Caffeine"
+  ],
+  "training_api_count": 7,
+  "fold_keys": [
+    "1:Caffeine:A",
+    "1:Caffeine:B"
+  ],
+  "progress": 0.0,
+  "revealed": false,
+  "coverage_metrics": {
+    "DS01_01": {
+      "lot_id": "DS01_01",
+      "api": "Caffeine",
+      "mission": "SpX-15",
+      "radiation_sensor1_coverage_pct": 95.02574912908214,
+      "radiation_sensor2_coverage_pct": 97.9221622981054,
+      "radiation_combined_coverage_pct": 98.07966104063041,
+      "temperature_coverage_pct": 37.57684569384676,
+      "relative_humidity_coverage_pct": 37.57684569384676,
+      "co2_coverage_pct": 37.57684569384676,
+      "pressure_coverage_pct": 0.0,
+      "oxygen_coverage_pct": 0.0
+    }
+  },
+  "prediction": null,
+  "published_result": null
+}

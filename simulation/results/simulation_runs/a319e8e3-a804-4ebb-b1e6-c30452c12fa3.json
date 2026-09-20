@@ -1,0 +1,24 @@
+{
+  "simulation_id": "a319e8e3-a804-4ebb-b1e6-c30452c12fa3",
+  "mode": "HYPOTHETICAL_LAB",
+  "api": "TestMolecule",
+  "model_version": "D-v0-A",
+  "environment_data_version": null,
+  "validation_type": "NONE_NOT_EXTERNAL_VALIDATION",
+  "held_out_apis": [],
+  "inputs": {
+    "tpsa": 40.0,
+    "xlogp": 2.0,
+    "molecular_weight": 250.0
+  },
+  "prediction": -2.3061633047277468,
+  "uncertainty_lower": -13.841138019065056,
+  "uncertainty_upper": 5.362112939091917,
+  "domain_status": "IN_DOMAIN",
+  "domain_distance": 0.5383883393580642,
+  "published_result": null,
+  "error": null,
+  "coverage_metrics": null,
+  "warning": "SIMULATED MODEL PREDICTION - NOT EXPERIMENTAL DATA. No environmental or kinetic response.",
+  "bootstrap_rank_deficient_fraction": 0.0275
+}

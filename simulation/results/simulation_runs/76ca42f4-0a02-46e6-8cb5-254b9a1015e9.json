@@ -1,0 +1,61 @@
+{
+  "simulation_id": "76ca42f4-0a02-46e6-8cb5-254b9a1015e9",
+  "created_utc": "2026-09-20T17:07:05.144680+00:00",
+  "mode": "HISTORICAL_REPLAY",
+  "lot_ids": [
+    "DS01_01",
+    "DS01_16"
+  ],
+  "apis": [
+    "Caffeine",
+    "Diazepam"
+  ],
+  "missions": [
+    "SpX-15",
+    "SpX-18"
+  ],
+  "environment_data_version": "phase-d-v0",
+  "model_version": "D-v0",
+  "validation_type": "LTDO",
+  "held_out_apis": [
+    "Caffeine",
+    "Diazepam"
+  ],
+  "training_api_count": 6,
+  "fold_keys": [
+    "2:Caffeine + Diazepam:A",
+    "2:Caffeine + Diazepam:B"
+  ],
+  "progress": 0.0,
+  "revealed": false,
+  "coverage_metrics": {
+    "DS01_01": {
+      "lot_id": "DS01_01",
+      "api": "Caffeine",
+      "mission": "SpX-15",
+      "radiation_sensor1_coverage_pct": 95.02574912908214,
+      "radiation_sensor2_coverage_pct": 97.9221622981054,
+      "radiation_combined_coverage_pct": 98.07966104063041,
+      "temperature_coverage_pct": 37.57684569384676,
+      "relative_humidity_coverage_pct": 37.57684569384676,
+      "co2_coverage_pct": 37.57684569384676,
+      "pressure_coverage_pct": 0.0,
+      "oxygen_coverage_pct": 0.0
+    },
+    "DS01_16": {
+      "lot_id": "DS01_16",
+      "api": "Diazepam",
+      "mission": "SpX-18",
+      "radiation_sensor1_coverage_pct": 23.34229308081231,
+      "radiation_sensor2_coverage_pct": 90.16490684097322,
+      "radiation_combined_coverage_pct": 90.197652169055,
+      "temperature_coverage_pct": 21.096958015587028,
+      "relative_humidity_coverage_pct": 21.096958015587028,
+      "co2_coverage_pct": 21.096958015587028,
+      "pressure_coverage_pct": 0.0,
+      "oxygen_coverage_pct": 0.0
+    }
+  },
+  "prediction": null,
+  "published_result": null
+}

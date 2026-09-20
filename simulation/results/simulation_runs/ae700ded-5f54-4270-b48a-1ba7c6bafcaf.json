@@ -1,0 +1,90 @@
+{
+  "simulation_id": "ae700ded-5f54-4270-b48a-1ba7c6bafcaf",
+  "created_utc": "2026-09-20T17:03:56.865778+00:00",
+  "mode": "HISTORICAL_REPLAY",
+  "lot_ids": [
+    "DS01_01"
+  ],
+  "apis": [
+    "Caffeine"
+  ],
+  "missions": [
+    "SpX-15"
+  ],
+  "environment_data_version": "phase-d-v0",
+  "model_version": "D-v0",
+  "validation_type": "LODO",
+  "held_out_apis": [
+    "Caffeine"
+  ],
+  "training_api_count": 7,
+  "fold_keys": [
+    "1:Caffeine:A",
+    "1:Caffeine:B"
+  ],
+  "progress": 1.0,
+  "revealed": false,
+  "coverage_metrics": {
+    "DS01_01": {
+      "lot_id": "DS01_01",
+      "api": "Caffeine",
+      "mission": "SpX-15",
+      "radiation_sensor1_coverage_pct": 95.02574912908214,
+      "radiation_sensor2_coverage_pct": 97.9221622981054,
+      "radiation_combined_coverage_pct": 98.07966104063041,
+      "temperature_coverage_pct": 37.57684569384676,
+      "relative_humidity_coverage_pct": 37.57684569384676,
+      "co2_coverage_pct": 37.57684569384676,
+      "pressure_coverage_pct": 0.0,
+      "oxygen_coverage_pct": 0.0
+    }
+  },
+  "prediction": [
+    {
+      "fold_key": "1:Caffeine:A",
+      "held_out_pair": "Caffeine",
+      "test_api": "Caffeine",
+      "lot_id": "DS01_01",
+      "mission": "SpX-15",
+      "predicted_delta_api": -9.611046821844797,
+      "uncertainty_lower": -16.06825330815052,
+      "uncertainty_upper": 22.778631619433547,
+      "domain_status": "NEAR_BOUNDARY",
+      "domain_distance": 1.0441711041516994,
+      "model": "A",
+      "training_api_count": 7,
+      "validation_type": "LODO",
+      "contributions": {
+        "Intercept": -13.242529968617122,
+        "tpsa": -18.658156953216004,
+        "xlogp": 0.25884249042388235,
+        "molecular_weight": 22.03079760956445
+      },
+      "bootstrap_rank_deficient_fraction": 0.075
+    },
+    {
+      "fold_key": "1:Caffeine:B",
+      "held_out_pair": "Caffeine",
+      "test_api": "Caffeine",
+      "lot_id": "DS01_01",
+      "mission": "SpX-15",
+      "predicted_delta_api": -9.065687764635417,
+      "uncertainty_lower": -15.083291016401542,
+      "uncertainty_upper": 15.821329321842189,
+      "domain_status": "NEAR_BOUNDARY",
+      "domain_distance": 1.0441711041516994,
+      "model": "B",
+      "training_api_count": 7,
+      "validation_type": "LODO",
+      "contributions": {
+        "Intercept": -13.073125849863379,
+        "tpsa": -19.37145722364855,
+        "xlogp": 0.28594910538494533,
+        "molecular_weight": 23.92444639756575,
+        "replay_dose_mGy": -0.8315001940741796
+      },
+      "bootstrap_rank_deficient_fraction": 0.075
+    }
+  ],
+  "published_result": null
+}

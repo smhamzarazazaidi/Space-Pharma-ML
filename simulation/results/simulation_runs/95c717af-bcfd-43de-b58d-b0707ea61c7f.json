@@ -1,0 +1,61 @@
+{
+  "simulation_id": "95c717af-bcfd-43de-b58d-b0707ea61c7f",
+  "created_utc": "2026-09-20T17:08:37.422071+00:00",
+  "mode": "HISTORICAL_REPLAY",
+  "lot_ids": [
+    "DS01_03",
+    "DS01_04"
+  ],
+  "apis": [
+    "Diphenhydramine",
+    "Epinephrine"
+  ],
+  "missions": [
+    "SpX-15",
+    "SpX-15"
+  ],
+  "environment_data_version": "phase-d-v0",
+  "model_version": "D-v0",
+  "validation_type": "LTDO",
+  "held_out_apis": [
+    "Diphenhydramine",
+    "Epinephrine"
+  ],
+  "training_api_count": 6,
+  "fold_keys": [
+    "2:Diphenhydramine + Epinephrine:A",
+    "2:Diphenhydramine + Epinephrine:B"
+  ],
+  "progress": 0.0,
+  "revealed": false,
+  "coverage_metrics": {
+    "DS01_03": {
+      "lot_id": "DS01_03",
+      "api": "Diphenhydramine",
+      "mission": "SpX-15",
+      "radiation_sensor1_coverage_pct": 97.52284584264565,
+      "radiation_sensor2_coverage_pct": 98.8657630860485,
+      "radiation_combined_coverage_pct": 99.0611225822074,
+      "temperature_coverage_pct": 27.242562966501854,
+      "relative_humidity_coverage_pct": 27.242562966501854,
+      "co2_coverage_pct": 27.242562966501854,
+      "pressure_coverage_pct": 0.0,
+      "oxygen_coverage_pct": 0.0
+    },
+    "DS01_04": {
+      "lot_id": "DS01_04",
+      "api": "Epinephrine",
+      "mission": "SpX-15",
+      "radiation_sensor1_coverage_pct": 97.52284584264565,
+      "radiation_sensor2_coverage_pct": 98.8657630860485,
+      "radiation_combined_coverage_pct": 99.0611225822074,
+      "temperature_coverage_pct": 27.242562966501854,
+      "relative_humidity_coverage_pct": 27.242562966501854,
+      "co2_coverage_pct": 27.242562966501854,
+      "pressure_coverage_pct": 0.0,
+      "oxygen_coverage_pct": 0.0
+    }
+  },
+  "prediction": null,
+  "published_result": null
+}
