@@ -1,0 +1,2 @@
+rate_lodo_mae,rate_lodo_r2,target,interpretation
+0.01279099686455995,0.260359497160622,delta_api_percent / days_in_space,Diagnostic only; primary target remains endpoint delta_api_percent

@@ -1,0 +1,33 @@
+lot_id,v2_dose_mGy,phase_d_storage_observed_dose_mGy,one_hour_gap_sensitivity_mGy,v2_cabin_coverage_method,boundary_issue
+DS01_01,51.6896,50.82662585035254,50.800655267609606,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_02,113.8483,112.77415965103697,112.73939612301528,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_03,113.8483,112.77415965103697,112.73939612301528,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_04,113.8483,112.77415965103697,112.73939612301528,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_05,113.8483,112.77415965103697,112.73939612301528,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_06,113.8483,112.77415965103697,112.73939612301528,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_07,113.8483,112.77415965103697,112.73939612301528,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_08,51.6896,50.82662585035254,50.800655267609606,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_09,72.4564,71.46994390717475,71.4451230047246,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_10,72.4564,71.46994390717475,71.4451230047246,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_11,65.5647,64.69848292579528,64.8054190709477,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_12,37.0078,30.46918909662067,30.469819692595586,row count x 5 min; may double count,NG-11 departure is delivery Cygnus departure; pharmaceutical transfer/return unresolved
+DS01_13,37.0078,30.46918909662067,30.469819692595586,row count x 5 min; may double count,NG-11 departure is delivery Cygnus departure; pharmaceutical transfer/return unresolved
+DS01_14,37.0078,30.46918909662067,30.469819692595586,row count x 5 min; may double count,NG-11 departure is delivery Cygnus departure; pharmaceutical transfer/return unresolved
+DS01_15,42.4334,41.70068043502902,41.808352091024034,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_16,42.4334,41.70068043502902,41.808352091024034,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_17,68.2526,67.56513361251487,67.70098893866174,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_18,68.2526,67.56513361251487,67.70098893866174,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_19,68.2526,67.56513361251487,67.70098893866174,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_20,68.2526,67.56513361251487,67.70098893866174,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_21,68.2526,67.56513361251487,67.70098893866174,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_22,68.2526,67.56513361251487,67.70098893866174,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_23,68.2526,67.56513361251487,67.70098893866174,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_24,81.1558,80.0934800903819,80.14624186677008,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_25,217.0879,216.07842015816928,216.16538978165434,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_26,133.8133,132.53987136874923,132.61997782374843,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_27,133.8133,132.53987136874923,132.61997782374843,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_28,133.8133,132.53987136874923,132.61997782374843,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_29,133.8133,132.53987136874923,132.61997782374843,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_30,158.3981,157.36240281541075,157.45076582038786,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_31,133.8133,132.53987136874923,132.61997782374843,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D
+DS01_32,81.1558,80.0934800903819,80.14624186677008,row count x 5 min; may double count,Inherited V2 timestamps; lot-specific manifest not independently verified in D

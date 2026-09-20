@@ -1,0 +1,21 @@
+{
+  "model_family": "Ridge",
+  "feature_set": "FS-A_Chemistry_Core",
+  "features": [
+    "tpsa",
+    "xlogp",
+    "molecular_weight"
+  ],
+  "hyperparameters": {
+    "alpha": 0.1
+  },
+  "training_dataset": "master_dataset_v2_verified.csv",
+  "target": "delta_api_percent",
+  "validation": "nested leave-one-drug-out",
+  "random_seed": 20260920,
+  "software": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sklearn": "1.9.1"
+  },
+  "status": "candidate_only_not_deployed"
+}
