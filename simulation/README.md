@@ -1,10 +1,46 @@
 # ISS pharmaceutical exposure simulation research
 
-Status: **Phase A audit. No models trained and no final simulator built.**
+Status: **Phase D complete — Historical Research Simulator operational.**
 
-Read [the audit](docs/PHASE_A_AUDIT.md) first. The supplied master task requires review of this phase before normalization, modeling or UI development.
+**→ [SIMULATION\_TUTORIAL.md](docs/SIMULATION_TUTORIAL.md) — start here to run and use the simulator.**
 
-This folder is isolated from the parent project. The audit reads the existing master dataset and radiation archive without changing them. Downloaded NASA payloads are immutable and have adjacent SHA-256 provenance records. Generated audit CSVs are derived diagnostics, not corrected experimental measurements.
+The simulator replays real ISS mission environments for 32 pharmaceutical lots across 8 APIs
+and produces blinded LODO/LTDO stability predictions. Start the server with:
+
+```powershell
+.\START_SIMULATOR.ps1
+```
+
+Then open `http://127.0.0.1:8765` in a browser.
+
+---
+
+## Documentation index
+
+| Document | Topic |
+|----------|-------|
+| [SIMULATION_TUTORIAL.md](docs/SIMULATION_TUTORIAL.md) | **How to run and use the simulator — start here** |
+| [PHASE_D_SIMULATOR_REPORT.md](docs/PHASE_D_SIMULATOR_REPORT.md) | Phase D readiness Q&A and final metrics |
+| [HISTORICAL_SIMULATOR_METHOD.md](docs/HISTORICAL_SIMULATOR_METHOD.md) | Integration, validation design, uncertainty, provenance |
+| [LTDO_VALIDATION.md](docs/LTDO_VALIDATION.md) | All 28 two-drug holdout pair results |
+| [PHASE_C_MODEL_REPORT.md](docs/PHASE_C_MODEL_REPORT.md) | Model candidate comparison |
+| [PHASE_B_REPORT.md](docs/PHASE_B_REPORT.md) | Environmental exposure analysis and collinearity |
+| [PHASE_A_AUDIT.md](docs/PHASE_A_AUDIT.md) | Original dataset audit |
+| [ENVIRONMENT_DATA_PROVENANCE.md](docs/ENVIRONMENT_DATA_PROVENANCE.md) | NASA RadLab and EDA sourcing |
+
+---
+
+## Phase history
+
+This folder is isolated from the parent project. Phases A through D were completed in sequence:
+
+- **Phase A** — dataset audit; outcome linkage, radiation sensor policy, provenance.
+- **Phase B** — environmental exposure matrix; coverage and collinearity analysis.
+- **Phase C** — model candidate selection; OLS, Ridge, ElasticNet, GPR, RF benchmarks.
+- **Phase D** — historical replay simulator; LODO/LTDO validation; blinded caffeine test.
+
+Downloaded NASA payloads are immutable and have adjacent SHA-256 provenance records.
+Generated CSV outputs are derived diagnostics, not corrected experimental measurements.
 
 ## Reproduce
 
